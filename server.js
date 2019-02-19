@@ -40,6 +40,6 @@ app.post('/feedback', (req,res) => {
 })
 	 
 
-//where 3000 is port to listen on
-app.listen(3000, ()=> { console.log('a function to run right after app.listen. Note, app is running on port 3000')});
+ //run the port we get from heroku, else run 3000
+app.listen(process.env.PORT || 3000, ()=> { console.log(`a function to run right after app.listen, app is running on port ${process.env.PORT}`)});
  
