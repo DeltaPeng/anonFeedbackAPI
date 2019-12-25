@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
   res.send('it\'s alive....IT\'S ALIIIIIVE!!!');
 })
 
-//moved the logic out to it's own file.  File needed access to postgresDB and bcrypt, so passing those in as well
+//moved the logic out to it's own file.  File needed access to postgresDB, so passing those in as well
 const fbData = require('./controllers/feedback');
 app.post('/feedback', (req, res) => {
   fbData.feedbackSubmit(req, res, postgresDB)
