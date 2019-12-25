@@ -9,6 +9,9 @@
   "devDependencies": {
     "nodemon": "^1.18.9"
   },
+  "engines": {
+    "node": "12.14.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
